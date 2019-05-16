@@ -1,7 +1,7 @@
 ---
 classes:
   - profile::linux
-  - role::icinga_node
+  #- role::icinga_node
 
 profile::icinga2::ticket_salt: NotSafeNotSafeNotSafeNotSafeNotSafeNotSafeNotSafeNotSafe
 profile::icinga2::ca_host: master.icinga.local

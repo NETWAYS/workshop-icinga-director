@@ -10,4 +10,3 @@ if (-not (Get-Command choco.exe -errorAction SilentlyContinue)) {
 }
 
 choco install -y --no-progress notepadplusplus
-choco install -y --no-progress icinga2log
