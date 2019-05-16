@@ -6,6 +6,9 @@ classes:
 profile::icinga2::ticket_salt: NotSafeNotSafeNotSafeNotSafeNotSafeNotSafeNotSafeNotSafe
 profile::icinga2::ca_host: master.icinga.local
 
+# default parent for agents
+profile::icinga2::parent: satellite
+
 profile::icinga2::endpoints:
   master.icinga.local:
     host: '192.168.33.11'
