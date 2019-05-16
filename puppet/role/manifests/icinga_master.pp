@@ -5,4 +5,7 @@ class role::icinga_master {
 
   include profile::icinga2::ido
   include profile::icinga2::ca
+
+  include profile::icingaweb2
+  include profile::apache
 }
