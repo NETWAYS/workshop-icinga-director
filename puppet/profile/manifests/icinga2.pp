@@ -9,12 +9,20 @@ class profile::icinga2 (
   Hash[String, Hash] $zones       = {},
   Hash[String, Hash] $apiusers    = {},
 ) {
+  if $is_master {
+    $_const_ticket_salt = $ticket_salt
+  } else {
+    $_const_ticket_salt = ''
+  }
+
   class { 'icinga2':
     confd       => 'local.d',
     features    => ['checker', 'mainlog', 'command'],
     manage_repo => true,
+    constants   => {
+      'TicketSalt' => $_const_ticket_salt,
+    },
   }
-
 
   file { '/etc/icinga2/local.d':
     ensure => directory,
