@@ -1,0 +1,9 @@
+---
+classes:
+  - role::icinga_master
+
+profile::icinga2::apiusers:
+  director:
+    password: director
+    permissions:
+      - '*'

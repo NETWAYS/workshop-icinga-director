@@ -1,4 +1,28 @@
 ---
 classes:
-  - ntp
-  - vagrantenv
+  - profile::linux
+  - role::icinga_node
+
+profile::icinga2::ticket_salt: NotSafeNotSafeNotSafeNotSafeNotSafeNotSafeNotSafeNotSafe
+profile::icinga2::ca_host: master.icinga.local
+
+profile::icinga2::endpoints:
+  master.icinga.local:
+    host: '192.168.33.11'
+  satellite.icinga.local:
+    host: '192.168.33.12'
+
+profile::icinga2::zones:
+  master:
+    endpoints:
+      - master.icinga.local
+  satellite:
+    parent: master
+    endpoints:
+      - satellite.icinga.local
+
+profile::icinga2::apiusers:
+  root:
+    password: password
+    permissions:
+      - '*'
