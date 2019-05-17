@@ -30,6 +30,16 @@ def new_vm(config, name, ip)
 
     host.vm.network 'private_network', ip: ip
 
+    host.vm.provider 'virtualbox' do |vb|
+      vb.customize [
+        'modifyvm',  :id,
+        '--groups',  '/Icinga Director',
+        '--audio',   'none',
+        '--usb',     'on',
+        '--usbehci', 'off'
+      ]
+    end
+
     yield(host) if block_given?
   end
 end
