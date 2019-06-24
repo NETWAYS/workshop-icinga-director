@@ -2,7 +2,7 @@
 
 set -e
 
-if ! rpm -q puppet-release &>/dev/null; then
+if ! rpm -q puppet6-release &>/dev/null && ! rpm -q puppet-release &>/dev/null; then
   yum install -y https://yum.puppetlabs.com/puppet6-release-el-7.noarch.rpm
 fi
 
