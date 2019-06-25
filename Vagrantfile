@@ -17,7 +17,6 @@ Vagrant.configure('2') do |config|
 
   config.vm.provider 'virtualbox' do |vb|
     vb.memory = '512'
-    vb.linked_clone = true
   end
 
   config.vm.provision :hosts, sync_hosts: true

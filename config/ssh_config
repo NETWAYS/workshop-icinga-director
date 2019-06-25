@@ -1,0 +1,4 @@
+Host *.icinga.local
+  User vagrant
+  ForwardAgent yes
+  #IdentityFile ~/.ssh/insecure_ssh_key
