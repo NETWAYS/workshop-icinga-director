@@ -29,7 +29,7 @@ module_install puppetlabs-stdlib
 module_install lazyfrosch-vagrantenv
 
 module_install icinga-icinga2
-module_install icinga-icingaweb2 --version 2.2.0 --force
+module_install icinga-icingaweb2
 
 symlink_module /vagrant/puppet/profile
 symlink_module /vagrant/puppet/role
