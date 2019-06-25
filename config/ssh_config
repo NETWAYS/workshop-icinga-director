@@ -1,4 +1,4 @@
-Host *.icinga.local
+Host *.icinga.local master satellite agent-linux agent-windows
   User vagrant
   ForwardAgent yes
   #IdentityFile ~/.ssh/insecure_ssh_key

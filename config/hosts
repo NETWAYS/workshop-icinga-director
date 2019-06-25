@@ -1,0 +1,5 @@
+# Local Icinga VMs
+192.168.33.11 master.icinga.local master
+192.168.33.12 satellite.icinga.local satellite
+192.168.33.21 agent-linux.icinga.local agent-linux
+192.168.33.22 agent-windows.icinga.local agent-windows
