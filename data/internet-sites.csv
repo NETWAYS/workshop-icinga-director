@@ -1,0 +1,5 @@
+"host","service","vhost","uri"
+"icinga.com","https","","/"
+"packages.icinga.com","https","","/"
+"netways.de","https","www.netways.de","/netways/team/"
+"google.de","https","www.google.de","/"
