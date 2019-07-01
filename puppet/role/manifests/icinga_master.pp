@@ -8,4 +8,5 @@ class role::icinga_master {
 
   include profile::icingaweb2
   include profile::apache
+  include profile::examples
 }

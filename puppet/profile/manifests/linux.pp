@@ -15,4 +15,11 @@ class profile::linux(
     user => 'root',
     type => 'ssh-rsa',
   })
+
+  $files = lookup('files', Hash, 'hash', {})
+  create_resources('file', $files, {
+    user  => 'root',
+    group => 'root',
+    mode  => '0644',
+  })
 }
