@@ -15,8 +15,8 @@ class profile::examples(
       ensure => directory;
     '/opt/import/linux-cmdb.sql':
       source => "${source}/linux-cmdb.sql";
-    '/opt/import/internet-sites.json':
-      source => "${source}/internet-sites.json";
+    '/opt/import/internet-sites.csv':
+      source => "${source}/internet-sites.csv";
     '/opt/import/windows-hosts.csv':
       source => "${source}/windows-hosts.csv";
   }
