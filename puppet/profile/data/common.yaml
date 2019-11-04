@@ -1,7 +1,7 @@
 ---
 profile::icingaweb2::extra_modules:
   director:
-    revision: v1.7.2
+    revision: v1.7.1
   ipl:
     revision: v0.4.0
   incubator:
