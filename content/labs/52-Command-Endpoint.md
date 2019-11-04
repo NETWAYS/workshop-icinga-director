@@ -1,8 +1,8 @@
 Lab: Command Endpoint
 =====================
 
-* Update linux service templates: `disk`, `load`
-* Run on Agent should be set to "yes"
+* Update linux service templates: `disk`, `load` and `icinga`
+* Run on Agent should be set to `yes`
 
 * Create host for `satellite.icinga.local` and leave it in the master zone
 
