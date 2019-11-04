@@ -7,9 +7,10 @@ We create a "Webserver" service set, and assign it based on vars.
 * Update external `http` command and add fields for:\
   `http_vhost`, `http_ssl`, `http_uri`
 
-* Create service template `http`
+* Create service templates:
+  - `http`
+  - `https`, which sets `http_ssl` to true
 * Update host `master.icinga.local` and add `webserver` to the `system_roles` array
 * Create Service Set `Webserver`
-* Add service `http`
-* Add service `https` which sets `http_ssl`
+* Add services for `http` and `https`
 * Apply the service set via `host.vars.system_roles contains "webserver"`
