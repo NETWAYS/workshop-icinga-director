@@ -3,6 +3,11 @@ classes:
   - role::icinga_master
 
 profile::icinga2::apiusers:
+  root:
+    password: root
+    permissions:
+      - '*'
+
   director:
     password: director
     permissions:

@@ -6,7 +6,7 @@ class profile::icingaweb2 (
   $ido_username = 'icinga2',
   $ido_password = 'icinga2',
   $api_username = 'root',
-  $api_password = 'root,'
+  $api_password = 'root',
 ) {
   include profile::apache
 
