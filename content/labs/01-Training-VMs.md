@@ -3,8 +3,8 @@ Lab: Training VMs
 
 ### Passwords
 
-**SSH Login:** vagrant / vagrant (same password also for root) \
-**Icinga Web Admin:** icingaadmin / icinga
+**SSH Login:** `vagrant` / `vagrant` (same password for root) \
+**Icinga Web Admin:** `icingaadmin` / `icinga`
 
 ### Virtual Machines
 
@@ -13,7 +13,13 @@ Lab: Training VMs
 * **agent-linux** 192.168.56.21
 * **agent-windows** 192.168.56.22
 
-Also see /etc/hosts on your Notebook.
+Also see /etc/hosts on your notebook.
+
+### All Labs
+
+Can be found in the GitHub repository for this training:
+
+    https://github.com/NETWAYS/workshop-icinga-director
 
 ### Tasks
 
@@ -22,8 +28,8 @@ Also see /etc/hosts on your Notebook.
 * Start master and satellite VM
 * Login to all VMs by `ssh <hostname>`
 * Inspect Icinga 2 Installation on "master" and "satellite"
-    - check /etc/icinga2
-    - icinga2 daemon -C
+    - check content of /etc/icinga2
+    - `icinga2 daemon -C`
     - Check log if master and satellite are connected
 * Open Firefox and browse to `http://master/`
 * Login with icingaadmin and check if Icinga is running

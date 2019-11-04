@@ -7,5 +7,7 @@ You need to import the included OVA file to re-create all VMs in VirtualBox.
 
     sudo tee -a /etc/hosts < hosts
 
-    ip link show dev vboxnet1 || VBoxManage hostonlyif create
-    VBoxManage hostonlyif ipconfig vboxnet1 --ip 192.168.56.1
+Should no longer be required:
+
+    #ip link show dev vboxnet1 || VBoxManage hostonlyif create
+    #VBoxManage hostonlyif ipconfig vboxnet1 --ip 192.168.56.1

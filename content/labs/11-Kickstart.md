@@ -1,5 +1,5 @@
-Lab: Kickstart Director
-=======================
+Lab: Setup and Kickstart Director
+=================================
 
 Go to the director module and fill the Kickstart form:
 

@@ -3,7 +3,7 @@ Lab: Install Fileshipper
 
 Check the project and releases on GitHub:
 
-https://github.com/Icinga/icingaweb2-module-fileshipper
+    https://github.com/Icinga/icingaweb2-module-fileshipper
 
 Install the current release with GIT
 

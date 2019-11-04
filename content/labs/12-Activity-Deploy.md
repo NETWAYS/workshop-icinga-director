@@ -7,10 +7,14 @@ Lab: Activity Log & Deploy
 
 Now let's have a look on the master VM:
 
-    cd /var/lib/icinga2/api
-    find packages/
-    find zones/
+```
+cd /var/lib/icinga2/api
+find packages/
+find zones/
+```
 
 Also have a look at the log file, and search for "director".
 
-    less /var/log/icinga2.log
+```
+less /var/log/icinga2.log
+```

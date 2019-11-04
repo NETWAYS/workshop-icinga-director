@@ -1,24 +1,23 @@
-Lab: Install Director
-=====================
+Lab: Setup Director
+===================
 
-Visit the project on GitHub:
+The Director is pre-installed in version **1.7.x**, as well as the required modules:
+**ipl**, **incubator** and **reactbundle**.
 
-    https://github.com/Icinga/icingaweb2-module-director
+* Inspect /usr/share/icingaweb2/modules
+* Open Icinga Web 2 and check enabled modules
 
-Check the releases for latest version and use the version during GIT install.
+Install and enable the background daemon for Director:
 
-    # yum install -y git
-    # cd /usr/share/icingaweb2/modules
-    # git clone https://github.com/Icinga/icingaweb2-module-director director -b v1.6.2
+    # useradd -r -g icingaweb2 -m -d /var/lib/icingadirector -s /bin/false icingadirector
 
-Then setup the database
+    # cp /usr/share/icingaweb2/modules/director/contrib/systemd/icinga-director.service /etc/systemd/system/
+    # systemctl daemon-reload
 
-    # mysql
-    mysql> CREATE DATABASE director CHARACTER SET 'utf8';
-    mysql> GRANT ALL ON director.* TO director@localhost IDENTIFIED BY 'director';
+    # systemctl start icinga-director.service
+    # systemctl enable icinga-director.service
+    # systemctl status icinga-director.service
 
-The rest will be done via the web interface:
-
-* Enable director module
-* Create director DB resource, ensure charset is set to `utf8`
-* Go to director and install database schema
+* Open Icinga Web 2 and access the Director overview
+* select the `director_db` database and create the schema
+* Check if the background daemon becomes active after a few seconds

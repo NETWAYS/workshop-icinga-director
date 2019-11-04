@@ -7,6 +7,7 @@ Lab: Sync CMDB Hosts
     - address
     - vars.system_os
 
-* Check for changes and run the import
+* Check the preview tab
+* Run the import
 * Check Activity log
 * Deploy config and check monitoring status

@@ -27,7 +27,16 @@ Icinga Director Workshop
 
 ## Workshop Environment
 
-* Notebook
+* Notebook mit VirtualBox, and VMs for
+  - Icinga Master
+  - Icinga Satellite
+  - Linux Agent
+  - Windows Agent
+
+## Further reading
+
+* [Labs](content/labs/) to following during workshop
+* [Documentation](docs/) for the workshop itself
 
 ## License
 

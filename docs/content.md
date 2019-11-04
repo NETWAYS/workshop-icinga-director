@@ -12,6 +12,7 @@ Workshop Content
 
 * Getting Started
     - Installation and sources
+    - Dependencies and background daemon
     - **Lab:** Installation Director
     - Kickstart
     - **Lab:** Kickstart with Icinga 2
@@ -69,9 +70,13 @@ Workshop Content
     - Syncing services (combined key unique)
     - **Lab:** Import Internet Sites and create hosts and services
 
+* Automation with background jobs
+    - Triggering of import and sync
+    - Automatic config deployments
+    - Housekeeping
+
 * Time Periods
     - Show Icinga 2 documentation and glance on Director Interface
-    - Mention include/exclude coming with 1.7
     - Usable for notification and check settings
 
 * Notifications
@@ -90,7 +95,6 @@ Workshop Content
 
 * Advanced Topics
     - Apply For with Services
-    - Automation with jobs -> docs
     - Configuration baskets
     - Quick Glance: icingacli
     - Quick Glance: Director API

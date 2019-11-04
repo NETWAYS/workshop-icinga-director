@@ -2,7 +2,7 @@ Lab: Import Services
 ====================
 
 * Create separate Import Source for Hosts & Services
-* Import "internet-sites.json"
+* Import "internet-sites.csv"
 
 * Host key column: `host`
 * Host properties:

@@ -3,22 +3,30 @@ Lab: Templates & Hosts
 
 Create host templates:
 
-    Name: default host
-    Check Command: hostalive
-    Add fields: system_*
-    Add default values as you like
+```
+Name: default host
+Check Command: hostalive
+Add fields: system_*
+Add default values as you like
+```
 
-    Name: linux host
-    Imports: default host
+```
+Name: linux host
+Imports: default host
+```
 
-    Name: windows host
-    Imports: default host
+```
+Name: windows host
+Imports: default host
+```
 
 Create a host for the master vm:
 
-    Name: master.icinga.local
-    Address: 192.168.56.11
-    Imports: linux host
+```
+Name: master.icinga.local
+Address: 192.168.56.11
+Imports: linux host
+```
 
 Now **deploy** the config and check monitoring if the host is monitored.
 

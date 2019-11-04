@@ -11,6 +11,7 @@ Create your own command for `check_dummy`
 * Add fields for the arguments
 * Set default values under main view of the command
 
+```
     Name: state
     Value: $dummy_state$
     Position: 1
@@ -20,3 +21,4 @@ Create your own command for `check_dummy`
     Value: $dummy_text$
     Position: 2
     Skip Key: yes
+```
