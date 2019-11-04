@@ -24,6 +24,8 @@ class profile::icinga2 (
     },
   }
 
+  ensure_packages(['nagios-plugins-all'])
+
   file { '/etc/icinga2/local.d':
     ensure => directory,
     owner  => $icinga2::globals::user,
