@@ -28,3 +28,9 @@ Icinga Director Workshop
 ## Workshop Environment
 
 * Notebook
+
+## License
+
+Copyright (c) 2019 NETWAYS GmbH info@netways.de
+
+Material is licensed under https://creativecommons.org/licenses/by-nc-sa/4.0
