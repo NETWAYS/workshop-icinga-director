@@ -17,7 +17,7 @@ Create host templates:
 Create a host for the master vm:
 
     Name: master.icinga.local
-    Address: 192.168.33.11
+    Address: 192.168.56.11
     Imports: linux host
 
 Now **deploy** the config and check monitoring if the host is monitored.

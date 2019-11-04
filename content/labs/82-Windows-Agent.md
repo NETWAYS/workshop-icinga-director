@@ -2,7 +2,7 @@ Lab: Windows Agent Installation
 ===============================
 
 * Create new host for `agent-windows.icinga.local`
-    - with address `192.168.33.22`
+    - with address `192.168.56.22`
     - Use template `windows host`, zone `satellite` and enable agent
 * Start VM `agent-windows`
 * Download MSI package on Windows from https://packages.icinga.com/windows

@@ -11,9 +11,9 @@ profile::icinga2::parent: satellite
 
 profile::icinga2::endpoints:
   master.icinga.local:
-    host: '192.168.33.11'
+    host: '192.168.56.11'
   satellite.icinga.local:
-    host: '192.168.33.12'
+    host: '192.168.56.12'
 
 profile::icinga2::zones:
   master:

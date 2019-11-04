@@ -8,10 +8,10 @@ Lab: Training VMs
 
 ### Virtual Machines
 
-* **master** 192.168.33.11
-* **satellite** 192.168.33.12
-* **agent-linux** 192.168.33.21
-* **agent-windows** 192.168.33.22
+* **master** 192.168.56.11
+* **satellite** 192.168.56.12
+* **agent-linux** 192.168.56.21
+* **agent-windows** 192.168.56.22
 
 Also see /etc/hosts on your Notebook.
 

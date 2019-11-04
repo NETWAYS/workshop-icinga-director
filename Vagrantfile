@@ -9,11 +9,11 @@ Vagrant.configure('2') do |config|
   # Disable updates of vbguest tools
   config.vbguest.auto_update = false if Vagrant.has_plugin?('vagrant-vbguest')
 
-  new_linux_vm config, 'master', '192.168.33.11'
-  new_linux_vm config, 'satellite', '192.168.33.12'
+  new_linux_vm config, 'master', '192.168.56.11'
+  new_linux_vm config, 'satellite', '192.168.56.12'
 
-  new_linux_vm config, 'agent-linux', '192.168.33.21'
-  new_windows_vm config, 'agent-windows', '192.168.33.22'
+  new_linux_vm config, 'agent-linux', '192.168.56.21'
+  new_windows_vm config, 'agent-windows', '192.168.56.22'
 
   config.vm.provider 'virtualbox' do |vb|
     vb.memory = '512'
@@ -24,7 +24,6 @@ end
 
 def new_vm(config, name, ip)
   config.vm.define name do |host|
-    # host.vm.box = 'bento/centos-7.6'
     host.vm.hostname = "#{name}.#{DOMAIN_NAME}"
 
     host.vm.network 'private_network', ip: ip

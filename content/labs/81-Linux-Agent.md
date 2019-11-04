@@ -2,7 +2,7 @@ Lab: Linux Agent Installation
 =============================
 
 * Create new host for `agent-linux.icinga.local`
-    - with address `192.168.33.21`
+    - with address `192.168.56.21`
     - Use template `linux host`, zone `satellite` and enable agent
 * Start VM `agent-linux`
 * Configure Icinga 2 Repository and install packages
