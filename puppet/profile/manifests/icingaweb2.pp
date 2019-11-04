@@ -1,14 +1,17 @@
 class profile::icingaweb2 (
-  $db_dbname    = 'icingaweb2',
-  $db_username  = 'icingaweb2',
-  $db_password  = 'icingaweb2',
-  $ido_dbname   = 'icinga2',
-  $ido_username = 'icinga2',
-  $ido_password = 'icinga2',
-  $api_username = 'root',
-  $api_password = 'root',
+  $db_dbname     = 'icingaweb2',
+  $db_username   = 'icingaweb2',
+  $db_password   = 'icingaweb2',
+  $ido_dbname    = 'icinga2',
+  $ido_username  = 'icinga2',
+  $ido_password  = 'icinga2',
+  $api_username  = 'root',
+  $api_password  = 'root',
+  $extra_modules = {},
+  $resources     = {},
 ) {
   include profile::apache
+  include profile::mysql
 
   mysql::db { $db_dbname:
     user     => $db_username,
@@ -46,9 +49,28 @@ class profile::icingaweb2 (
     source  => 'puppet:///modules/profile/icingaweb2.conf',
   }
 
+  # PHP extra modules for Director and modules
+  ensure_packages([
+    'rh-php71-php-process',
+    'rh-php71-php-pcntl',
+    'rh-php71-php-soap',
+  ])
+
   service { 'rh-php71-php-fpm':
     ensure  => running,
     enable  => true,
     require => Package['icingaweb2'],
+  }
+
+  $extra_modules.each |$name, $config| {
+    profile::icingaweb2::module { $name:
+      * => $config,
+    }
+  }
+
+  $resources.each |$name, $config| {
+    icingaweb2::config::resource { $name:
+      * => $config,
+    }
   }
 }

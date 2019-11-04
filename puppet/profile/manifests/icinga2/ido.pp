@@ -4,9 +4,9 @@ class profile::icinga2::ido(
   $ido_dbname = 'icinga2',
 ) {
   include profile::icinga2
-  include mysql::server
+  include profile::mysql
 
-  Class['Mysql::Server'] -> Class['icinga2']
+  Class['Profile::Mysql'] -> Class['icinga2']
 
   mysql::db { $ido_dbname:
     user     => $ido_username,

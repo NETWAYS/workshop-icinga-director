@@ -12,3 +12,19 @@ profile::icinga2::apiusers:
     password: director
     permissions:
       - '*'
+
+mysql::server::db:
+  director:
+    user: director
+    password: director
+    charset: 'utf8'
+
+profile::icingaweb2::resources:
+  director_db:
+    type: db
+    db_type: mysql
+    host: localhost
+    db_name: director
+    db_username: director
+    db_password: director
+    db_charset: utf8
