@@ -51,8 +51,9 @@ netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=
 # Will be done by the user:
 #netsh advfirewall firewall add rule name="Icinga 2" dir=in action=allow program="C:\Program Files\ICINGA2\sbin\icinga2.exe" enable=yes
 
+#-ErrorAction SilentlyContinue
 if ((Get-ExecutionPolicy) -ne "Unrestricted") {
-  Set-ExecutionPolicy Unrestricted -Force
+  Set-ExecutionPolicy -ExecutionPolicy Bypass -Force -Scope MachinePolicy
 }
 
 if ($NeedsRestart) {
