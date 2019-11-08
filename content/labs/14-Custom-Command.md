@@ -1,5 +1,5 @@
-Lab: Custom dummy command
-=========================
+Lab - Custom dummy command
+==========================
 
 Create your own command for `check_dummy`
 
@@ -12,13 +12,15 @@ Create your own command for `check_dummy`
 * Set default values under main view of the command
 
 ```
-    Name: state
-    Value: $dummy_state$
-    Position: 1
-    Skip Key: yes
+Name: state
+Value: $dummy_state$
+Position: 1
+Skip Key: yes
+```
 
-    Name: text
-    Value: $dummy_text$
-    Position: 2
-    Skip Key: yes
+```
+Name: text
+Value: $dummy_text$
+Position: 2
+Skip Key: yes
 ```

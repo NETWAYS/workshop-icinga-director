@@ -1,5 +1,5 @@
-Lab: Monitoring on Satellite
-============================
+Lab - Monitoring on Satellite
+=============================
 
 * Create a new host `icinga.com`
 * Set zone of the host to `satellite` zone

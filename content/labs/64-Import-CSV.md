@@ -1,5 +1,5 @@
-Lab: Import & Sync CSV
-======================
+Lab - Import & Sync CSV
+=======================
 
 * Create a Import Source that imports "windows-hosts.csv"
 * Create FQDN with domain `icinga.local`
@@ -11,9 +11,9 @@ Lab: Import & Sync CSV
 * Create a sync rule for the Windows hosts
 
 * Ensure properties:
-    - import
-    - address
-    - vars.system_os
+    - `import`
+    - `address`
+    - `vars.system_os`
 
 * Check for changes and run the import
 * Check Activity log

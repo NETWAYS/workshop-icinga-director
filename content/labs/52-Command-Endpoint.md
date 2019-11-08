@@ -1,5 +1,5 @@
-Lab: Command Endpoint
-=====================
+Lab - Command Endpoint
+======================
 
 * Update linux service templates: `disk`, `load` and `icinga`
 * Run on Agent should be set to `yes`

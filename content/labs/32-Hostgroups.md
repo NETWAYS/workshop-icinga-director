@@ -1,5 +1,5 @@
-Lab: Hostgroups
-===============
+Lab - Hostgroups
+================
 
 Create a hostgroup which assigns based on the template.
 
@@ -10,4 +10,4 @@ Assign: host.templates contains "linux host"
 
 Check member tab to see which hosts are in the group.
 
-Deploy and check monitoring.
+Now deploy and check monitoring.

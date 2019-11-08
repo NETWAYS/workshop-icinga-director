@@ -1,0 +1,12 @@
+{% if config.extra.social %}
+  <div class="md-footer-social">
+    {#<link rel="stylesheet" href="{{ 'assets/fonts/font-awesome.css' | url }}">#}
+    {% for social in config.extra.social %}
+      {% if social.type == 'break' %}
+      <br/>
+      {% else %}
+      <a href="{{ social.link }}" class="md-footer-social__link"><i class="fa fa-{{ social.type }}"></i>{{ social.text }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}

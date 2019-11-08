@@ -1,9 +1,10 @@
-Lab: Training VMs
-=================
+Lab - Training VMs
+==================
 
 ### Passwords
 
-**SSH Login:** `vagrant` / `vagrant` (same password for root) \
+**SSH Login:** `vagrant` / `vagrant` (same password for root)
+
 **Icinga Web Admin:** `icingaadmin` / `icinga`
 
 ### Virtual Machines
@@ -14,12 +15,6 @@ Lab: Training VMs
 * **agent-windows** 192.168.56.22
 
 Also see /etc/hosts on your notebook.
-
-### All Labs
-
-Can be found in the GitHub repository for this training:
-
-    https://github.com/NETWAYS/workshop-icinga-director
 
 ### Tasks
 

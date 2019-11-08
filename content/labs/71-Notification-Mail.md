@@ -1,8 +1,13 @@
-Lab: Notification by external commands
-======================================
+Lab - Notification by external commands
+=======================================
 
 * Inspect the default e-mail notification in `/etc/icinga2/conf.d/commands.conf`
-* Copy the config to `/etc/icinga2/local.d/commands-mail.conf` - use `cp -a` for permissions
+* Copy the config to a directory that will be loaded in Icinga 2
+
+```
+cp -a /etc/icinga2/conf.d/commands.conf /etc/icinga2/local.d/commands-mail.conf
+```
+
 * Reload icinga2
 * Re-Run Director Kickstart
 

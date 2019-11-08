@@ -1,5 +1,5 @@
-Lab: Setup Director
-===================
+Lab - Setting Up Director
+=========================
 
 The Director is pre-installed in version **1.7.x**, as well as the required modules:
 **ipl**, **incubator** and **reactbundle**.

@@ -1,5 +1,5 @@
-Lab: Activity Log & Deploy
-==========================
+Lab - Activity Log & Deploy
+===========================
 
 * Inspect the Activity Log for changes done by Kickstart
 * Deploy the latest changes to Icinga 2

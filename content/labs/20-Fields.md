@@ -1,5 +1,5 @@
-Lab: Fields and Data Lists
-==========================
+Lab - Fields and Data Lists
+===========================
 
 Create the following fields:
 
@@ -10,8 +10,8 @@ Create the following fields:
 
 Create a data list `System Types` and add the following values:
 
-* server
-* desktop
-* vm
+* `server`
+* `desktop`
+* `vm`
 
 Now edit the `system_type` field and configure it as `DataList` with the new list and output `String`.

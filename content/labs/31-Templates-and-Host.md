@@ -1,4 +1,4 @@
-Lab: Templates & Hosts
+Lab - Templates & Hosts
 ======================
 
 Create host templates:
@@ -31,5 +31,6 @@ Imports: linux host
 Now **deploy** the config and check monitoring if the host is monitored.
 
 Bonus:
+
 * Check the preview of the objects
 * Check the current content of the deployment

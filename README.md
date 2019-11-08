@@ -1,42 +1,14 @@
 Icinga Director Workshop
 ========================
 
-**Duration:** 2 days
+This is a NETWAYS workshop on Icinga Director.
 
-**Knowledge recommended:**
+**Informations to attend:** https://www.netways.de/trainings/icinga-director-workshop/
 
-* Good basic knowledge on Icinga and monitoring
-* Icinga Fundamentals training is recommended to get started
-* Practical experience with Icinga in your own environment
+**Online version of content:** https://netways.github.io/workshop-icinga-director
 
-## Topics
-
-* Director Basics
-  - Templates for Hosts and Services
-  - Host Objects
-  - Utilizing Apply rules
-  - Services Sets
-  - Fields and Parameters
-* Configuring an Icinga Environment
-  - Icinga Master
-  - Icinga Satellite
-  - Agent on Linux and Windows
-* Import and Sync
-  - Importing data from files
-  - Importing from SQL
-
-## Workshop Environment
-
-* Notebook mit VirtualBox, and VMs for
-  - Icinga Master
-  - Icinga Satellite
-  - Linux Agent
-  - Windows Agent
-
-## Further reading
-
-* [Labs](content/labs/) to following during workshop
-* [Documentation](docs/) for the workshop itself
+As this is a workshop, most content consists of labs, while the know-how is transferred by talking about the software
+and working on questions by the attendees.
 
 ## License
 

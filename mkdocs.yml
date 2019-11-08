@@ -1,0 +1,84 @@
+---
+site_name: Icinga Director Workshop
+
+repo_name: GitHub
+repo_url: https://github.com/NETWAYS/workshop-icinga-director
+remote_branch: gh-pages
+
+site_author: NETWAYS GmbH <info@netways.de>
+copyright: >-
+  <p>Copyright (c) 2019 <a href="https://netways.de">NETWAYS GmbH</a></p>
+  <p>This documentation is licensed under
+  <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"
+  title="Creative Commons Attribution-ShareAlike 4.0 International License">CC-BY-SA-4.0</a></p>
+docs_dir: content
+
+markdown_extensions:
+  - smarty
+  - sane_lists
+  - admonition
+
+theme:
+  name: material
+  custom_dir: theme
+  logo: assets/images/netways-300x300.png
+  font: false
+
+extra:
+  social:
+    - type: globe
+      link: https://netways.de
+      text: netways.de
+    - type: twitter
+      link: https://twitter.com/netways
+      text: netways
+    - type: facebook
+      link: https://facebook.com/netways
+      text: netways
+    - type: break
+    - type: globe
+      link: https://icinga.com
+      text: icinga.com
+    - type: doc-text
+      link: https://icinga.com/docs
+      text: docs
+    - type: twitter
+      link: https://twitter.com/icinga
+      text: icinga
+    - type: facebook
+      link: https://facebook.com/icinga
+      text: icinga
+
+extra_css:
+  - assets/fonts/roboto.css
+  - assets/fonts/roboto-mono.css
+  - assets/fonts/font-awesome.css
+  - assets/stylesheets/extra.css
+
+nav:
+  - Introduction: index.md
+  - Labs:
+      - Training VMs: labs/01-Training-VMs.md
+      - Setting Up Director: labs/10-Install-Director.md
+      - Kickstart: labs/11-Kickstart.md
+      - Activity & Deploy: labs/12-Activity-Deploy.md
+      - External Commands: labs/13-External-Command.md
+      - Custom Commands: labs/14-Custom-Command.md
+      - Fields: labs/20-Fields.md
+      - Templates & Hosts: labs/31-Templates-and-Host.md
+      - Hostgroups: labs/32-Hostgroups.md
+      - Services: labs/41-Services.md
+      - Service Sets: labs/42-Service-Sets.md
+      - Satellite: labs/51-Satellite.md
+      - Command Endpoint: labs/52-Command-Endpoint.md
+      - Import CMDB: labs/61-Import-CMDB.md
+      - Sync CMDB: labs/62-Sync-CMDB.md
+      - Install Fileshipper: labs/63-Install-Fileshipper.md
+      - Import CSV: labs/64-Import-CSV.md
+      - Import Services: labs/65-Import-Services.md
+      - E-Mail Notification: labs/71-Notification-Mail.md
+      - Linux Agent: labs/81-Linux-Agent.md
+      - Windows Agent: labs/82-Windows-Agent.md
+  - Trainer Infos:
+      - Content: trainer/content.md
+      - Machines: trainer/machines.md

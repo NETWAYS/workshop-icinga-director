@@ -1,5 +1,5 @@
-Lab: External Command with fields
-=================================
+Lab - External Command with fields
+==================================
 
 Create fields with the following external commands:
 

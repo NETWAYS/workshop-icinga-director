@@ -1,0 +1,3 @@
+wheel
+mkdocs>=1
+mkdocs-material>=3

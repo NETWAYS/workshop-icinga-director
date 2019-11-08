@@ -1,8 +1,8 @@
-Lab: Import Services
-====================
+Lab - Import Services
+=====================
 
 * Create separate Import Source for Hosts & Services
-* Import "internet-sites.csv"
+* Import `internet-sites.csv`
 
 * Host key column: `host`
 * Host properties:
@@ -19,7 +19,7 @@ Lab: Import Services
     - import: `${service}`
     - object_name: `${service} ${host}`
     - host: `${host}`
-    - vars.http_vhost with a filter `vhost!=`
+    - `vars.http_vhost` with a filter `vhost!=`
 
 * Execute Imports and Syncs
 * Check Activity log
