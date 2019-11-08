@@ -8,5 +8,6 @@
 # Vagrant
 /.vagrant
 
-# Python
+# Python / Mkdocs
 /venv
+/site
