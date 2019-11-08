@@ -53,7 +53,7 @@ netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=
 
 #-ErrorAction SilentlyContinue
 if ((Get-ExecutionPolicy) -ne "Unrestricted") {
-  Set-ExecutionPolicy -ExecutionPolicy Bypass -Force -Scope MachinePolicy
+  Set-ExecutionPolicy -ExecutionPolicy Bypass -Force -Scope LocalMachine
 }
 
 if ($NeedsRestart) {
