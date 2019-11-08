@@ -1,0 +1,29 @@
+body,input{
+  font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+code,kbd,pre{
+  font-family:"RobotoMono","Courier New",Courier,monospace
+}
+
+.md-header {
+  background-color: #f16823;
+}
+
+.md-logo {
+  margin: 0;
+  padding: 0;
+  height: 2.4rem;
+}
+.md-logo img {
+  width: auto;
+  height: 2.3rem;
+}
+
+.md-footer-social__link {
+  width: auto;
+  font-size: 0.8em;
+}
+
+.md-footer-social__link i {
+  margin-right: 0.2em;
+}
