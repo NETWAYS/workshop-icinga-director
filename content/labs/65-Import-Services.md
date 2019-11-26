@@ -1,25 +1,30 @@
 Lab - Import Services
 =====================
 
-* Create separate Import Source for Hosts & Services
-* Import `internet-sites.csv`
+## Import Hosts
 
-* Host key column: `host`
-* Host properties:
+* Create Import Source: Internet Hosts
+    - Import `internet-sites.csv`
+    - Use object key: `host`
+
+* Create Sync Rule: `Internet Hosts` with properties:
     - address: `${host}`
     - import: `default host`
 
-* Create service template for `https`
-    - command `http`
-    - `http_ssl` to `true`
+## Import Services
 
-* Create `key` from modifier and combined `${host}-${service}`
-* Key column: `key`
-* Service properties:
-    - import: `${service}`
-    - object_name: `${service} ${host}`
+* Create Import Source: Internet Services
+    - Import `internet-sites.csv`
+    - Use object key: `${host}!${service} ${host}`
+
+* Create Sync Rule: `Internet Services` with properties:
+    - import: `${service}` -> service template from name
+    - object_name: `${service} ${host}` -> `https icinga.com`
     - host: `${host}`
-    - `vars.http_vhost` with a filter `vhost!=`
+    - `vars.http_vhost` from `vhost`
+    - `vars.http_uri` from `uri`
+
+## Run and Deploy
 
 * Execute Imports and Syncs
 * Check Activity log
