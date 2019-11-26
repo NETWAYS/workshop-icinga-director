@@ -9,7 +9,7 @@ Install the current release with GIT
 sudo -i
 git clone \
     https://github.com/Icinga/icingaweb2-module-fileshipper \
-    /usr/share/icingaweb2/modules -b v1.1.0
+    /usr/share/icingaweb2/modules/fileshipper -b v1.1.0
 
 icingacli module enable fileshipper
 ```

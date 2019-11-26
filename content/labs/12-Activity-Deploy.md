@@ -16,5 +16,5 @@ find zones/
 Also have a look at the log file, and search for "director".
 
 ```
-less /var/log/icinga2.log
+less /var/log/icinga2/icinga2.log
 ```

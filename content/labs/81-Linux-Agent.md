@@ -24,9 +24,12 @@ scp icinga2-agent-kickstart.bash agent-linux:
 - Then execute the script on the VM
 
 ```
+cd /home/vagrant
 sudo bash icinga2-agent-kickstart.bash
 sudo icinga2 daemon -C
 sudo systemctl start icinga2
+sudo systemctl enable icinga2
+sudo systemctl status icinga2
 ```
 
 * Check local log file for cluster connection
