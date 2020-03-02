@@ -4,6 +4,10 @@ profile::icingaweb2::extra_modules:
     revision: v1.7.2
     daemon: true
     daemon_source: /usr/share/icingaweb2/modules/director/contrib/systemd/icinga-director.service
+    daemon_deps:
+      - ipl
+      - incubator
+      - reactbundle
   ipl:
     revision: v0.4.0
   incubator:

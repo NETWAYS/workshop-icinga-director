@@ -1,14 +1,15 @@
 define profile::icingaweb2::module(
   $revision,
-  $source       = "https://github.com/Icinga/icingaweb2-module-${name}.git",
-  $module_path  = '/usr/share/icingaweb2/modules',
-  $enable       = true,
-  $daemon       = false,
-  $daemon_name  = "icinga-${name}",
-  $daemon_user  = "icinga${name}",
-  $daemon_group = "icinga${name}",
-  $daemon_home  = "/var/lib/icinga${name}",
+  $source        = "https://github.com/Icinga/icingaweb2-module-${name}.git",
+  $module_path   = '/usr/share/icingaweb2/modules',
+  $enable        = true,
+  $daemon        = false,
+  $daemon_name   = "icinga-${name}",
+  $daemon_user   = "icinga${name}",
+  $daemon_group  = "icinga${name}",
+  $daemon_home   = "/var/lib/icinga${name}",
   $daemon_source = undef,
+  $daemon_deps   = [],
 ) {
   ensure_packages(['git'])
 
@@ -68,9 +69,14 @@ define profile::icingaweb2::module(
       }
     }
 
+    $_requires = $daemon_deps.map |$name| {
+      Profile::Icingaweb2::Module[$name]
+    }
+
     service { $daemon_name:
-      ensure => running,
-      enable => true,
+      ensure  => running,
+      enable  => true,
+      require => $_requires,
     }
   }
 }
