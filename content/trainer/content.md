@@ -13,7 +13,7 @@ Workshop Content
 * Getting Started
     - Installation and sources
     - Dependencies and background daemon
-    - **Lab:** Installation Director
+    - **Lab:** Inspect Installation
     - Kickstart
     - **Lab:** Kickstart with Icinga 2
     - Overview of Director UI
