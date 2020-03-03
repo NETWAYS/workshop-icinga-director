@@ -22,6 +22,7 @@ Also see /etc/hosts on your notebook.
   or "Oracle VM VirtualBox"
 * Start master and satellite VM
 * Login to all VMs by `ssh <hostname>`
+* Switch to root via `sudo -i`
 * Inspect Icinga 2 Installation on "master" and "satellite"
     - check content of /etc/icinga2
     - `icinga2 daemon -C`
