@@ -596,13 +596,13 @@
 <strong>ipl</strong>, <strong>incubator</strong> and <strong>reactbundle</strong>.</p>
 <ul>
 <li>Inspect /usr/share/icingaweb2/modules</li>
-<li>
-<p>Check if icinga-director.service is running</p>
-<p>systemctl status icinga-director.service</p>
-</li>
-<li>
-<p>Open Icinga Web 2 and access the Director overview</p>
-</li>
+<li>Check if icinga-director.service is running</li>
+</ul>
+<pre><code># systemctl status icinga-director.service
+</code></pre>
+
+<ul>
+<li>Open Icinga Web 2 and access the Director overview</li>
 <li>Select the <code>director_db</code> database and create the schema</li>
 <li>Check if the background daemon becomes active after a few seconds</li>
 </ul>
