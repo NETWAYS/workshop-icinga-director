@@ -1,7 +1,7 @@
 Workshop Content
 ================
 
-> In German: "Die rote Linie"
+> In German: "Der rote Faden"
 
 * Introduction
     - Introduction round, experiences with Icinga
