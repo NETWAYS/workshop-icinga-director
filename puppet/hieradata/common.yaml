@@ -34,7 +34,7 @@ profile::icinga2::apiusers:
 profile::linux::ssh_keys:
   INSECURE SSH KEY for Icinga Director Workshop:
     type: ssh-rsa
-    key: "AAAAB3NzaC1yc2EAAAADAQABAAABAQCwGF9C9HPYaatYqo04r9TjL5T2jRI2fzpd7x0+zVGb6S5MpjFMboqxa1O7lfJyMLd5ZfVrycRPKl8g\
-      kqqsOg6qlvVn7kQZg841rKQriEFKFoM8kNIi6Z/fzj95aUF2kIywrhZCawOtOEOLMoFImf62WEXUQuir0TyiE49NKlekkzLW++KCfEbc/qug3bb\
-      gSJ6s5EL/lO0asC2rCYTwZbSxGmD60hEDWYn1O62MuzVdMCGy8GDfhk4/x6/wRG0YcSrO0A7dVnbCtgPtqfahgWb6gon3Tib4OGJ9LRtcmfL/bR\
-      lr2wkDx3oQD1jzSGsKgnfh500C8goJgq679Lr6EDVN"
+    key: "AAAAB3NzaC1yc2EAAAADAQABAAABAQC2PGrCg2W+RJcqQGRcq+WY3FlR1AeSwYssnuCOcd52pZEnA5UckHRf3QaEXCtOBNfaHsbDCkYJWtk9\
+      rvGQ2j3FRO8RteCffoyclg7COWqokQMEg4m+lvDNSG/pSHHCYWkPxoZcbg6C/wHiJ/dZOvpoz57g7pzQ8QkEkKeYY7htsUpjAdpDKWcEo8DzABXW\
+      3oLItqKVbV17VUHixtj25uJqrRUsxhCSaeLLPUKVp6sch1YrDhxBZg/YCgVqoyEbL5FEhCDPzsC7rtSXsyUaRtyTZgIE+Mk+/IP0UhqopsfmEYMq\
+      4UeKxkKQX4NZLWOsfqnTW9ZAk0O3TXwDKspb11bn INSECURE SSH KEY for Icinga Director Workshop"

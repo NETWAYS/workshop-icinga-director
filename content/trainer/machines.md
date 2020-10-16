@@ -31,6 +31,14 @@ Make sure all changes are applied and no errors appear, you can repeat the provi
 vagrant provision
 ```
 
+## Re-create ssh key
+
+```bash
+ssh-keygen -f config/insecure_ssh_key -m pem -t rsa -b 2048 -C "INSECURE SSH KEY for Icinga Director Workshop"
+```
+
+And update `profile::linux::ssh_keys` in `puppet/hieradata/common.yaml`.
+
 ## Export VMs
 
 ```bash
