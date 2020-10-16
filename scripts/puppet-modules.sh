@@ -33,22 +33,35 @@ symlink_module() {
   fi
 }
 
-# dependencies
-module_install puppetlabs-stdlib -v 6.1.0
-module_install puppetlabs-concat -v 6.1.0
-module_install puppetlabs-translate -v 2.0.0
+sync_module() {
+  target="$1"
+  module_name="$(basename "$target")"
 
-module_install puppetlabs-apache -v 5.2.0
-module_install puppetlabs-ntp -v 8.1.0
-module_install puppetlabs-mysql -v 10.2.1
-module_install puppetlabs-vcsrepo -v 3.0.0
+  if [ -L "${module_path}/${module_name}" ]; then
+    echo "Deleting old symlink ${module_path}/${module_name}"
+    rm -f "${module_path}/${module_name}"
+  fi
+
+  echo "Syncing module from ${target} to ${module_path}/${module_name}"
+  rsync -rlt "${target}/" "${module_path}/${module_name}/"
+}
+
+# dependencies
+module_install puppetlabs-stdlib -v 6.5.0
+module_install puppetlabs-translate -v 2.2.0
+module_install puppetlabs-concat -v 6.2.0
+
+module_install puppetlabs-apache -v 5.6.0
+module_install puppetlabs-ntp -v 8.4.0
+module_install puppetlabs-mysql -v 10.7.1
+module_install puppetlabs-vcsrepo -v 3.1.1
 
 module_install lazyfrosch-vagrantenv -v 0.2.1
-module_install puppet-alternatives -v 2.1.0
+module_install puppet-alternatives -v 3.0.0
 
-module_install icinga-icinga2 -v 2.3.0
-#module_install icinga-icingaweb2 -v 2.3.1
-git_module_install icingaweb2 https://github.com/Icinga/puppet-icingaweb2.git bugfix/config-directory-mode
+module_install icinga-icinga -v 1.0.2
+module_install icinga-icinga2 -v 3.0.0
+module_install icinga-icingaweb2 -v 3.0.0
 
-symlink_module /vagrant/puppet/profile
-symlink_module /vagrant/puppet/role
+sync_module /vagrant/puppet/profile
+sync_module /vagrant/puppet/role

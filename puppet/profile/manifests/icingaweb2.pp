@@ -43,7 +43,7 @@ class profile::icingaweb2 (
     },
   }
 
-  Class['icinga2::repo'] -> Class['icingaweb2']
+  Class['icinga::repos'] -> Class['icingaweb2']
 
   apache::custom_config { 'icingaweb2':
     source  => 'puppet:///modules/profile/icingaweb2.conf',
