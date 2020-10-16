@@ -37,4 +37,4 @@ profile::linux::ssh_keys:
     key: "AAAAB3NzaC1yc2EAAAADAQABAAABAQC2PGrCg2W+RJcqQGRcq+WY3FlR1AeSwYssnuCOcd52pZEnA5UckHRf3QaEXCtOBNfaHsbDCkYJWtk9\
       rvGQ2j3FRO8RteCffoyclg7COWqokQMEg4m+lvDNSG/pSHHCYWkPxoZcbg6C/wHiJ/dZOvpoz57g7pzQ8QkEkKeYY7htsUpjAdpDKWcEo8DzABXW\
       3oLItqKVbV17VUHixtj25uJqrRUsxhCSaeLLPUKVp6sch1YrDhxBZg/YCgVqoyEbL5FEhCDPzsC7rtSXsyUaRtyTZgIE+Mk+/IP0UhqopsfmEYMq\
-      4UeKxkKQX4NZLWOsfqnTW9ZAk0O3TXwDKspb11bn INSECURE SSH KEY for Icinga Director Workshop"
+      4UeKxkKQX4NZLWOsfqnTW9ZAk0O3TXwDKspb11bn"
