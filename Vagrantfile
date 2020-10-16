@@ -44,7 +44,7 @@ end
 
 def new_linux_vm(config, name, ip)
   new_vm config, name, ip do |host|
-    host.vm.box = 'bento/centos-7.7'
+    host.vm.box = 'bento/centos-7'
 
     host.vm.provision 'shell', path: 'scripts/bootstrap.sh'
     host.vm.provision 'shell', path: 'scripts/puppet-modules.sh'
