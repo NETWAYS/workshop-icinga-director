@@ -57,5 +57,7 @@ if ((Get-ExecutionPolicy) -ne "Unrestricted") {
 }
 
 if ($NeedsRestart) {
-  Restart-Computer -Force
+  Write-Output "Restarting computer"
+  [Console]::Out.Flush()
+  Start-Job -ScriptBlock { Sleep 3; Restart-Computer -Force }
 }
