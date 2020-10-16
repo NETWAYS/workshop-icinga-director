@@ -51,12 +51,12 @@ class profile::icingaweb2 (
 
   # PHP extra modules for Director and modules
   ensure_packages([
-    'rh-php71-php-process',
-    'rh-php71-php-pcntl',
-    'rh-php71-php-soap',
+    'rh-php73-php-process',
+    'rh-php73-php-pcntl',
+    'rh-php73-php-soap',
   ])
 
-  service { 'rh-php71-php-fpm':
+  service { 'rh-php73-php-fpm':
     ensure  => running,
     enable  => true,
     require => Package['icingaweb2'],
