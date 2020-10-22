@@ -9,9 +9,14 @@ mysql> use cmdb
 mysql> SELECT * FROM hosts;
 ```
 
-* Create a DB resource for the CMDB, database, user and password is `cmdb`
+* Create a DB resource for the CMDB: *Menu -> Configuration -> Application -> Resources*
+    - Type: MySQL
+    - Host: `localhost`
+    - Database, Username and password is `cmdb`
 * Create an Import source for the CMDB
-* Add a modifier to set `fqdn` property, combine `${name}` and add `.icinga.local`
+* Add a modifier
+    - Property: `name` / Target property: `fqdn`
+    - Modifier: Combine multiple properties with `${name}.icinga.local`
 * Property `fqdn` is the key column
 
 * Validate preview

@@ -2,6 +2,8 @@ Lab - Monitoring on Satellite
 =============================
 
 * Create a new host `icinga.com`
+    - Template: `default host`
+    - Address: `icinga.com`
 * Set zone of the host to `satellite` zone
 * Configure `system_roles` with `webserver`
 

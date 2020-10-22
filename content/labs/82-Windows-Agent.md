@@ -3,7 +3,8 @@ Lab - Windows Agent Installation
 
 * Create new host for `agent-windows.icinga.local`
     - with address `192.168.56.22`
-    - Use template `windows host`, zone `satellite` and enable agent
+    - Use template `windows host`, zone `satellite`
+    - Enable Icinga Agent and establish connection for the host
 
 * Start VM `agent-windows`
 
